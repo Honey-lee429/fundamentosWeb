@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Festive&display=swap');
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: rgb(250, 227, 246);
+    text-align: center;
+    margin: 1rem;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    width: 30%;
+    margin-left: 90px;
+}
+
+header .container nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .container nav a {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: #ff7244;
+    width: 80%;
+}
+
+header .container nav a:hover {
+    color: blueviolet;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/*MAIN*/
+
+.titulo {
+    font-family: 'Dancing Script';
+    color: #371b16;
+}
+
+p, ul, li, .foto-principal, .video {
+    margin: 1rem; 
+}
+
+.subtitulo {
+    color: #748c8c;
+    margin: 1rem;
+}
+
+p, ul {
+    width: 50%;
+    margin: auto;
+    text-align:justify;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background: url("../img/background.jpg");
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer .info {
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+footer a:hover {
+    color: #ff7244;
+}
+
+footer .rede-social {
+    max-width: 30px;
+   padding: 10px 15px 0 0;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/download.png">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="parte-principal">
+            <h1 class="titulo">Adote, ame, compartilhe</h1>
+            <img class="foto-principal" src="/generation-brasil/fundamentos-web/img/doguinho.jpg" width=300
+                alt="foto cachorro com texto">
+        </div>
+
+        <div class="contato">
+            <h3>Fale Conosco > Contato</h3>
+            <h1>Formulário de Contato</h1>
+            <h3>por Hanely Taniguchi</h3>
+        </div>
+        <fieldset>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" onkeyup="validaNome()" required ="" >
+                <div class="nome"></div>
+
+                <label for="email">e-mail:</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com" onkeyup="validaEmail()" required = "">
+                <div class="email"></div>
+
+                <label for="tel">Telefone:</label>
+                <input type="number" name="tel" id="tel" placeholder="11 99999-9999" onkeyup="validaCelular()">
+                <div class="celular"></div>
+
+                <legend>Mensagem do Usuário</legend>
+                <label for="msg"></label>
+                <textarea id="msg" cols="30" rows="5"></textarea>
+            </form>
+
+            <input class="btn" type="button" value="Enviar">
+        </fieldset><br>
+
+        <fieldset>
+            <div>
+                <h3>Venha nos Visitar</h3>
+                <h4>Endereço</h4>
+                <p>Av. Siga em Frente, 123 - Avante - CEP 00000-000 - São Paulo/SP</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4349.589035338227!2d-46.72917055443753!3d-23.548544715484685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5721903e3605%3A0xd84b4117bca95a00!2sParque%20Villa%20Lobos%20-%20%C3%81rea%20de%20C%C3%A3es!5e0!3m2!1sen!2sbr!4v1626455535138!5m2!1sen!2sbr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="maps" onmousemove="zoomMapa()" onmouseout="zoomOutMapa()">
+                </iframe>
+
+            </div>
+        </fieldset>
+
+    </main>
+
+    <footer>
+        <div>
+            <p class="info"> 2021 - by Hanely Taniguchi &copy</p>
+            <a class="info" href="https://brazil.generation.org/">Curso Generation Brasil</a>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/hanely.menezes" target="_blank">
+                <img class="rede-social" src="../img/facebood.png" alt="">
+            </a>
+
+            <a href="https://www.linkedin.com/in/hanely-taniguchi/" target="_blank">
+                <img class="rede-social" src="../img/linkedin.png" alt="">
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="/generation-brasil/fundamentos-web/javascript/contato.js"></script>
+</body>
+
+</html>
